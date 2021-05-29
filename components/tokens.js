@@ -1,4 +1,4 @@
-export const choices = {
+const choices = {
     colors: {
       brand: {
           mediumPurple: '#9879e9',
@@ -261,9 +261,11 @@ export const choices = {
     }
   }
   
-  export const decisions = {
+  const decisions = {
    colors: {
        primary: choices.colors.brand.mediumPurple,
        
    } 
   }
+
+module.exports = { choices, decisions }
