@@ -9,3 +9,5 @@
 ## Atoms and molecules
 - `Create paragraph`
 - `Create button molecule`
+## Design Tokens [Components]
+- `Create tokens.js file`
