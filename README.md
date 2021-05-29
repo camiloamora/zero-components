@@ -6,3 +6,6 @@
 - `yarn add react`
 - `choose that is a react project`
 - `yarn storybook`
+## Atoms and molecules
+- `Create paragraph`
+- `Create button molecule`
