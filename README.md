@@ -11,3 +11,6 @@
 - `Create button molecule`
 ## Design Tokens [Components]
 - `Create tokens.js file`
+
+# Notes
+- TODO: Decide how to should ours design atomic, when what is atom and molecule
