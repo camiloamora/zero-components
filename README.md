@@ -9,8 +9,11 @@
 ## Atoms and molecules
 - `Create paragraph`
 - `Create button molecule`
+- `Create icon`
+- `Create button icon`
 ## Design Tokens [Components]
 - `Create tokens.js file`
+- `Generate token css`
 
 # Notes
 ## Atomic Design

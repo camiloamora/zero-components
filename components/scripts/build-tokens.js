@@ -31,7 +31,7 @@ function buildTokens(){
         ${decisionStr}`;
     const data = [":root {", customProperties.trim(), '}'].join('\n');
 
-    fs.writeFile('./tokens.css', data, 'utf8', function(err){
+    fs.writeFile('./styles/tokens.css', data, 'utf8', function(err){
         if(err) {
             console.log(err)
         }
