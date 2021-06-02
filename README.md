@@ -13,4 +13,6 @@
 - `Create tokens.js file`
 
 # Notes
-- TODO: Decide how to should ours design atomic, when what is atom and molecule
+## Atomic Design
+- Atom: A atom is component that composed by an unique atom or without HTML tags or just HTML tags  
+- Molecule: A molecule is a component that is composed by at leatest 2 diferent atoms.
