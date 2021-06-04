@@ -1,9 +1,9 @@
-const ICONS_ASSETS_PATH = '/icons/';
+const ICONS_ASSETS_PATH = '/icons/'
 
 const iconMap = {
-    'right-arrow': 'right-arrow'
-};
+  'right-arrow': 'right-arrow',
+}
 
-export const mapType = (type) => `${ICONS_ASSETS_PATH}/${iconMap[type]}.svg`;
+export const mapType = (type) => `${ICONS_ASSETS_PATH}/${iconMap[type]}.svg`
 
-export const mapSize = (size) => null
+export const mapSize = (size) => console.log(size)
