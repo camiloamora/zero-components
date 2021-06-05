@@ -3,16 +3,17 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import './button.css'
 
-const Button = ({ type, children, isBlock }) => console.log('>>>', type) || (
-  <button
-    className={classNames('button', {
-      [`type-${type}`]: type,
-      'is-block': isBlock && type !== 'tertiary',
-    })}
-  >
-    {children}
-  </button>
-)
+const Button = ({ type, children, isBlock }) =>
+  console.log('>>>', type) || (
+    <button
+      className={classNames('button', {
+        [`type-${type}`]: type,
+        'is-block': isBlock && type !== 'tertiary',
+      })}
+    >
+      {children}
+    </button>
+  )
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
