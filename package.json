@@ -9,7 +9,7 @@
     "build-storybook": "build-storybook",
     "build-tokens": "node ./scripts/build-tokens",
     "lint": "eslint .",
-    "prepare": "husky install && npx husky add .husky/pre-commit \"npm run lint-fix\""
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +25,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
-    "husky": "^6.0.0",
+    "husky": ">=6",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
     "react-is": "^17.0.2"
@@ -33,5 +33,8 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
