@@ -7,5 +7,5 @@ export default {
 }
 
 export const Default = () => (
-  <Picture src="http://placeimg.com/200/480/any" width={200} />
+  <Picture src="http://placeimg.com/400/400/any" width={200} />
 )
