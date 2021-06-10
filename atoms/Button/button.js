@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import './button.css'
+import styles from './button.module.css'
 
 const Button = ({ type, children, isBlock }) =>
   console.log('>>>', type) || (
     <button
-      className={classNames('button', {
-        [`type-${type}`]: type,
-        'is-block': isBlock && type !== 'tertiary',
+      className={classNames(styles.button, {
+        [styles[`type-${type}`]]: type,
+        [styles['is-block']]: isBlock && type !== 'tertiary',
       })}
     >
       {children}

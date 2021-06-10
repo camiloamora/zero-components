@@ -4,6 +4,6 @@
   padding: 12px 17px;
 }
 
-input::placeholder {
+/* input::placeholder {
   color: var(--colors-font-highlight);
-}
+} */

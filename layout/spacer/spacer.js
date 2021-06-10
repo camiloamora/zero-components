@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { choices } from '../../tokens'
-import './spacer.css'
+import styles from './spacer.module.css'
 import Horizontal from './horizontal'
 import Vertical from './vertical'
 
@@ -10,8 +10,8 @@ const getSize = (size) => choices.spacing[size]
 
 const Spacer = ({ size, isVisible }) => (
   <div
-    className={classNames('spacer', {
-      'is-visible': isVisible,
+    className={classNames(styles.spacer, {
+      [styles['is-visible']]: isVisible,
     })}
     style={{
       display: 'inline-block',

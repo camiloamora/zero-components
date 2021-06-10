@@ -4,12 +4,12 @@ import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import Picture from '../Picture'
 
-import './icon.css'
+import styles from './icon.module.css'
 
 const Icon = ({ type, size, hasBackground }) => (
   <div
-    className={classNames('icon', {
-      'has-background': hasBackground,
+    className={classNames(styles.icon, {
+      [styles['has-background']]: hasBackground,
     })}
     style={{ width: mapSize(size), height: mapSize(size) }}
   >
