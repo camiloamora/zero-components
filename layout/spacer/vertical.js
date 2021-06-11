@@ -1,10 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { choices } from '../../tokens'
 import styles from './spacer.module.css'
-
-const getSize = (size) => choices.spacing[size]
+import { getSize } from './helpers'
 
 const Vertical = ({ size, maxHeight, isVisible }) => (
   <div
