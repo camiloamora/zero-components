@@ -1,15 +1,23 @@
 {
   "name": "@camiloamora/components",
-  "version": "0.2.0",
+  "version": "0.0.0-development",
   "description": "A components library to create apps from zero to production",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camiloamora/zero-components.git"
+  },
+    "release": {
+      "branches": ["main", "next"]
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-storybook": "build-storybook",
     "build-tokens": "node ./scripts/build-tokens",
     "lint": "eslint .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
   },
   "keywords": [],
   "author": "",
@@ -28,14 +36,15 @@
     "husky": ">=6",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0",
-    "react-is": "^17.0.2"
+    "react-is": "^17.0.2",
+    "semantic-release": "17.4.3"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
   },
   "peerDependencies": {
+    "minireset.css": "0.0.7",
     "react": "17.0.2",
-    "react-dom": "^17.0.2",
-    "minireset.css": "0.0.7"
+    "react-dom": "^17.0.2"
   }
 }
