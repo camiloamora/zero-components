@@ -3,7 +3,7 @@
   position: relative;
 }
 
-.dropdown .icon {
+.dropdown-icon {
   position: absolute;
   right: 1px;
   pointer-events: none;
@@ -11,11 +11,12 @@
   transform: translateY(-50%);
 }
 
-.dropdownSelect {
-  border: 1px solid var(--colors-primary);
+.dropdown-select {
+  border: var(--border-width-default) solid var(--color-primary);
   border-radius: var(--border-radius-lg);
   padding: 10px 30px 10px 20px;
-  color: var(--colors-font-base);
+  color: var(--color-font-base);
+  height: var(--input-height);
 }
 
 

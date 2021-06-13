@@ -1,8 +1,8 @@
 const ICONS_ASSETS_PATH = '/icons/'
 
 const iconMap = {
-  'arrow-right': 'arrow-right',
-  'angle-down': 'angle-down',
+  arrowRight: 'arrow-right',
+  angleDown: 'angle-down',
 }
 
 const iconSize = {

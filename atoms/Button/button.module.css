@@ -11,6 +11,7 @@
     font-size: var(--font-size-2xl);
     max-width: 300px;
     min-width: max-content;
+    height: 45px;
 }
 
 .is-block {
