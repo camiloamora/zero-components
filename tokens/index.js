@@ -239,6 +239,10 @@ const choices = {
     lg: '30px',
     full: '9999px',
   },
+  borderWidth: {
+    none: '0',
+    default: '1px',
+  },
   zIndex: {
     auto: 'auto',
     0: '0',
@@ -262,6 +266,9 @@ const decisions = {
   backgrounds: {
     primary: choices.colors.brand.hintOffRed,
     highlight: choices.colors.brand.romance,
+  },
+  input: {
+    height: '38px',
   },
 }
 

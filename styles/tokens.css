@@ -205,6 +205,9 @@
         --border-radius-lg: 30px;
         --border-radius-full: 9999px;
             
+        --border-width-none: 0;
+        --border-width-default: 1px;
+            
         --z-index-0: 0;
         --z-index-10: 10;
         --z-index-20: 20;
@@ -223,4 +226,6 @@
             
         --backgrounds-primary: #f9f9f9;
         --backgrounds-highlight: #fcfdfd;
+            
+        --input-height: 38px;
 }
