@@ -1,0 +1,367 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Atoms/Button Primary 1`] = `
+<button
+  className="button type-primary is-block"
+>
+  Primary
+</button>
+`;
+
+exports[`Storyshots Atoms/Button Secondary 1`] = `
+<button
+  className="button type-secondary is-block"
+>
+  Secondary
+</button>
+`;
+
+exports[`Storyshots Atoms/Button Tertiary 1`] = `
+<button
+  className="button type-tertiary"
+>
+  Button Tertiary
+</button>
+`;
+
+exports[`Storyshots Atoms/Heading Colors 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <heading
+    className="heading color-default size-md"
+  >
+    Default Color
+  </heading>
+  <heading
+    className="heading color-primary size-md"
+  >
+    Primary Color
+  </heading>
+</div>
+`;
+
+exports[`Storyshots Atoms/Heading Default 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <heading
+    className="heading color-default size-md"
+  >
+    Heading
+  </heading>
+</div>
+`;
+
+exports[`Storyshots Atoms/Heading Sizes 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <heading
+    className="heading color-default size-xs"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-sm"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-md"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-lg"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-xl"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+  <heading
+    className="heading color-default size-2xl"
+  >
+    El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña toca el saxofón detrás del palenque de paja.
+  </heading>
+</div>
+`;
+
+exports[`Storyshots Atoms/Icon Angle Down 1`] = `
+<div
+  className="icon"
+  style={
+    Object {
+      "height": 26,
+      "width": 26,
+    }
+  }
+>
+  <picture
+    className="picture"
+  >
+    <img
+      src="/icons//angle-down.svg"
+      style={
+        Object {
+          "maxWidth": "26px",
+        }
+      }
+    />
+  </picture>
+</div>
+`;
+
+exports[`Storyshots Atoms/Icon Arrow Right 1`] = `
+<div
+  className="icon"
+  style={
+    Object {
+      "height": 26,
+      "width": 26,
+    }
+  }
+>
+  <picture
+    className="picture"
+  >
+    <img
+      src="/icons//arrow-right.svg"
+      style={
+        Object {
+          "maxWidth": "26px",
+        }
+      }
+    />
+  </picture>
+</div>
+`;
+
+exports[`Storyshots Atoms/Icon Has Background 1`] = `
+<div
+  className="icon has-background"
+  style={
+    Object {
+      "height": 26,
+      "width": 26,
+    }
+  }
+>
+  <picture
+    className="picture"
+  >
+    <img
+      src="/icons//angle-down.svg"
+      style={
+        Object {
+          "maxWidth": "26px",
+        }
+      }
+    />
+  </picture>
+</div>
+`;
+
+exports[`Storyshots Atoms/Input Text 1`] = `
+<input
+  className="input"
+  onChange={[Function]}
+  placeholder="Nombres"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Storyshots Atoms/Picture Default 1`] = `
+<picture
+  className="picture"
+>
+  <img
+    src="http://placeimg.com/400/400/any"
+    style={
+      Object {
+        "maxWidth": "200px",
+      }
+    }
+  />
+</picture>
+`;
+
+exports[`Storyshots Layout/Spacer Default 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": undefined,
+      "width": undefined,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer Extra Small 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 5,
+      "width": 5,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer Large 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 40,
+      "width": 40,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer Medium 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 20,
+      "width": 20,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Layout/Spacer Small 1`] = `
+<div
+  className="spacer is-visible"
+  style={
+    Object {
+      "display": "inline-block",
+      "height": 15,
+      "width": 15,
+    }
+  }
+/>
+`;
+
+exports[`Storyshots Molecules/ButtonIcon Default 1`] = `
+<button
+  className="button type-secondary"
+>
+  Button icon
+  <div
+    className="spacer"
+    style={
+      Object {
+        "display": "block",
+        "height": "100vh",
+        "maxHeight": "100%",
+        "width": 5,
+      }
+    }
+  />
+  <div
+    className="icon"
+    style={
+      Object {
+        "height": 26,
+        "width": 26,
+      }
+    }
+  >
+    <picture
+      className="picture"
+    >
+      <img
+        src="/icons//arrow-right.svg"
+        style={
+          Object {
+            "maxWidth": "26px",
+          }
+        }
+      />
+    </picture>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Molecules/Dropdown Default 1`] = `
+<div
+  className="dropdown"
+>
+  <div
+    className="dropdown-icon icon has-background"
+    style={
+      Object {
+        "height": 26,
+        "width": 26,
+      }
+    }
+  >
+    <picture
+      className="picture"
+    >
+      <img
+        src="/icons//undefined.svg"
+        style={
+          Object {
+            "maxWidth": "26px",
+          }
+        }
+      />
+    </picture>
+  </div>
+  <select
+    className="dropdown-select"
+    onChange={[Function]}
+    value=""
+  >
+    <option
+      value={800}
+    >
+      8:00 AM
+    </option>
+    <option
+      value={900}
+    >
+      9:00 AM
+    </option>
+    <option
+      value={1000}
+    >
+      10:00 AM
+    </option>
+    <option
+      value={1300}
+    >
+      1:00 PM
+    </option>
+  </select>
+</div>
+`;

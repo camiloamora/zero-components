@@ -7,11 +7,14 @@
     "type": "git",
     "url": "https://github.com/camiloamora/zero-components.git"
   },
-    "release": {
-      "branches": ["main", "next"]
+  "release": {
+    "branches": [
+      "main",
+      "next"
+    ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-storybook": "build-storybook",
     "build-tokens": "node ./scripts/build-tokens",
@@ -23,28 +26,36 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.14.3",
+    "@babel/core": "7.14.6",
+    "@babel/preset-env": "7.14.5",
+    "@babel/preset-react": "7.14.5",
     "@storybook/addon-actions": "^6.2.9",
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
+    "@storybook/addon-storyshots": "6.2.9",
     "@storybook/react": "^6.2.9",
+    "babel-jest": "27.0.2",
     "babel-loader": "^8.2.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "husky": ">=6",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "27.0.4",
     "lint-staged": "^11.0.0",
+    "minireset.css": "0.0.7",
     "prettier": "^2.3.0",
+    "react": "17.0.2",
+    "react-dom": "^17.0.2",
     "react-is": "^17.0.2",
+    "react-test-renderer": "17.0.2",
     "semantic-release": "17.4.3"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
   },
   "peerDependencies": {
-    "minireset.css": "0.0.7",
-    "react": "17.0.2",
-    "react-dom": "^17.0.2"
+    "minireset.css": "0.0.7"
   }
 }
