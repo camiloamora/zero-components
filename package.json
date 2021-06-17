@@ -16,11 +16,12 @@
   "scripts": {
     "test": "jest",
     "storybook": "start-storybook -p 6006 -s ./assets",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s ./assets",
     "build-tokens": "node ./scripts/build-tokens",
     "lint": "eslint .",
     "prepare": "husky install",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "chromatic": "npx chromatic --project-token=358998807752"
   },
   "keywords": [],
   "author": "",
@@ -36,6 +37,7 @@
     "@storybook/react": "^6.2.9",
     "babel-jest": "27.0.2",
     "babel-loader": "^8.2.2",
+    "chromatic": "5.9.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",

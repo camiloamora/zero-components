@@ -28,8 +28,8 @@ Icon
 .AppleDesktop
 Network Trash Folder
 Temporary Items
-.apdisk
 
+.apdisk
 ### Node ###
 # Logs
 logs
@@ -199,3 +199,4 @@ $RECYCLE.BIN/
 
 package-lock.json
 !atoms/Icon
+storybook-static
