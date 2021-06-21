@@ -6,14 +6,13 @@ import { getSize } from './helpers'
 
 const Vertical = ({ size, maxHeight, isVisible }) => (
   <div
-    className={classNames(styles.spacer, {
+    className={classNames(styles.spacer, styles.vertical, {
       [styles['is-visible']]: isVisible,
     })}
     style={{
-      display: 'block',
-      width: getSize(size),
       maxHeight: maxHeight,
-      height: '100vh',
+      // height: '100vh',
+      width: getSize(size),
     }}
   />
 )
