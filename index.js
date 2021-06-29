@@ -1,5 +1,6 @@
 // Layout
 export { default as Spacer } from './layout/spacer'
+export { default as Container } from './layout/container'
 
 // Atoms
 export { default as Button } from './atoms/Button'

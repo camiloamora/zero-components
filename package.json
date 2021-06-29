@@ -21,7 +21,8 @@
     "lint": "eslint .",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
-    "chromatic": "npx chromatic --project-token=358998807752"
+    "chromatic": "npx chromatic --project-token=358998807752",
+    "create-component": "node ./scripts/create-component"
   },
   "keywords": [],
   "author": "",
@@ -59,5 +60,10 @@
   },
   "peerDependencies": {
     "minireset.css": "0.0.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "build-tokens && lint-staged"
+    }
   }
 }
