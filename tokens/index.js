@@ -154,6 +154,7 @@ const choices = {
     //serif: ['Roboto Slab', '"Times New Roman"', 'serif'],
     sans: ['Quicksand', 'Arial', 'sans-serif'],
     //mono: ['"Roboto Mono"', 'Consolas', 'monospace'],
+    // TODO: add monofont size
   },
   fontSize: {
     base: '10px',
