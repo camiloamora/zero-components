@@ -17,7 +17,7 @@ export const Default = () => <Paragraph>Hello Paragraph</Paragraph>
 
 export const Colors = () => (
   <>
-    <Paragraph color="default">Default Color</Paragraph>
+    <Paragraph color="base">Default Color</Paragraph>
     <Paragraph color="muted">Primary Color</Paragraph>
   </>
 )

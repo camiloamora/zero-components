@@ -5,10 +5,10 @@ import Icon from '../../atoms/Icon'
 import Spacer from '../../layout/spacer/spacer'
 
 const ButtonIcon = ({ children, type, icon }) => (
-  <Button type={type} isBlock={false}>
+  <Button type={type} isBlock={false} isInline={true}>
     {children}
     <Spacer.Vertical size="xs"></Spacer.Vertical>
-    <Icon type={icon}></Icon>
+    <Icon name={icon}></Icon>
   </Button>
 )
 

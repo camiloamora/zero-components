@@ -1,5 +1,6 @@
 :root {
---colors-brand-medium-purple: #9879e9;
+--colors-brand-slate-blue: #7559d1;
+        --colors-brand-medium-purple: #9879e9;
         --colors-brand-mandy: #eb4e58;
         --colors-brand-white-lilac: #e8e8e8;
         --colors-brand-hint-off-red: #f9f9f9;
@@ -8,6 +9,10 @@
         --colors-brand-regent-gray: #7e858c;
         --colors-brand-loblolly: #b7b7b7;
         --colors-brand-blue-moon: #eff1fd;
+            
+        --colors-base-black: #000;
+        --colors-base-white: #fff;
+        --colors-base-transparent: transparent;
         --colors-transparent: transparent;
         --colors-black: #000;
         --colors-white: #fff;
@@ -206,7 +211,8 @@
         --border-radius-full: 9999px;
             
         --border-width-none: 0;
-        --border-width-default: 1px;
+        --border-width-thin: 1px;
+        --border-width-thick: 2px;
             
         --z-index-0: 0;
         --z-index-10: 10;
@@ -218,14 +224,18 @@
         
             
         --colors-primary: #9879e9;
+        --colors-primary-muted: #7559d1;
         --colors-primary-highlight: #eff1fd;
         --colors-secondary: #eb4e58;
         --colors-font-base: #455970;
         --colors-font-muted: #7e858c;
         --colors-font-highlight: #b7b7b7;
+        --colors-font-inverted: #fff;
+        --colors-secondary-inverted: #fff;
             
         --backgrounds-primary: #f9f9f9;
         --backgrounds-highlight: #fcfdfd;
+        --backgrounds-primary-inverted: #000;
             
         --input-height: 38px;
 }

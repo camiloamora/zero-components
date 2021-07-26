@@ -1,13 +1,72 @@
 .icon {
-  box-sizing: content-box;
-  display: inline-block;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
-  padding: 5px;
+  justify-content: center;
   user-select: none;
 }
 
-.has-background {
+.size-sm {
+  padding: 5px;
+}
+
+.size-md {
+  padding: 8px;
+}
+
+.size-lg {
+  padding: 12px;
+}
+
+.size-xl {
+  padding: 15px;
+}
+
+.color-base path {
+  fill: var(--colors-font-base);
+}
+
+.color-highlight path {
+  fill: var(--colors-font-highlight);
+}
+
+.color-muted path {
+  fill: var(--colors-font-muted);
+}
+
+.color-primary path {
+  fill: var(--colors-primary);
+}
+
+.color-inverted path {
+  fill: var(--colors-primary-inverted);
+}
+
+.background-base {
+  background: var(--colors-gray-100);
+  border-radius: var(--border-radius-full);
+}
+
+.background-transparent {
+  background: var(--colors-base-transparent);
+}
+
+.background-highlight {
   background: var(--colors-primary-highlight);
-  border-radius: var(--border-radius-lg);
+  border-radius: var(--border-radius-full);
+}
+
+.background-muted {
+  background: var(--colors-primary-muted);
+  border-radius: var(--border-radius-full);
+}
+
+.background-inverted {
+  border: var(--picture-border);
+  background: var(--colors-primary-inverted);
+  border-radius: var(--border-radius-full);
+  box-shadow: var(--box-shadow-sm);
+}
+
+.is-clickable {
+  cursor: pointer;
 }

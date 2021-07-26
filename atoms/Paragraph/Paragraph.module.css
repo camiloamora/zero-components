@@ -1,5 +1,9 @@
-.color-default {
+.color-base {
   color: var(--colors-font-base);
+}
+
+.color-inverted {
+  color: var(--colors-font-inverted);
 }
 
 .color-muted {

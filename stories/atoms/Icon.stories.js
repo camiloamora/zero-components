@@ -6,6 +6,8 @@ export default {
   component: Icon,
 }
 
-export const ArrowRight = () => <Icon type="arrow-right" />
-export const AngleDown = () => <Icon type="angle-down" />
-export const HasBackground = () => <Icon type="angle-down" hasBackground />
+export const Default = () => <Icon name="arrowRight" />
+export const Clickable = () => <Icon name="plusCircle" />
+export const Backgrounds = () => (
+  <Icon name="arrowRight" background="base" color="highlight" />
+)

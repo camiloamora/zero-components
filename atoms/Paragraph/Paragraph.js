@@ -1,16 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classNames from 'classnames'
 import styles from './Paragraph.module.css'
+import { getClasses } from '../../helpers/styles'
 
-const Paragraph = ({ children, size, color, weight }) => {
+const Paragraph = ({ children, className, size, color, weight }) => {
+  const classes = getClasses(styles)({ color, size, weight })
   return (
     <div
-      className={classNames(styles.paragraph, {
-        [styles[`color-${color}`]]: color,
-        [styles[`size-${size}`]]: size,
-        [styles[`weight-${weight}`]]: weight,
-      })}
+      className={classes(className, 'paragraph', ['color', 'size', 'weight'])}
     >
       {children}
     </div>
@@ -19,13 +16,14 @@ const Paragraph = ({ children, size, color, weight }) => {
 
 Paragraph.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.oneOf(['muted', 'default']),
-  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  color: PropTypes.oneOf(['base', 'muted', 'inverted']),
+  size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg']),
   weight: PropTypes.oneOf(['normal', 'medium']),
+  className: PropTypes.string,
 }
 
 Paragraph.defaultProps = {
-  color: 'default',
+  color: 'base',
   size: 'md',
   weight: 'normal',
 }

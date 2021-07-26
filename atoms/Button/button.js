@@ -3,13 +3,15 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import styles from './button.module.css'
 
-const Button = ({ type, children, isBlock }) =>
+const Button = ({ type, children, isMuted, isInline, onClick }) =>
   console.log('>>>', type) || (
     <button
       className={classNames(styles.button, {
         [styles[`type-${type}`]]: type,
-        [styles['is-block']]: isBlock && type !== 'tertiary',
+        [styles['is-inline']]: isInline || type === 'tertiary',
+        [styles['is-muted']]: isMuted && type === 'primary',
       })}
+      onClick={onClick}
     >
       {children}
     </button>
@@ -18,11 +20,14 @@ const Button = ({ type, children, isBlock }) =>
 Button.propTypes = {
   children: PropTypes.node.isRequired,
   type: PropTypes.oneOf(['primary', 'secondary', 'tertiary']),
-  isBlock: PropTypes.bool,
+  onClick: PropTypes.func,
+  isInline: PropTypes.bool,
+  isMuted: PropTypes.bool,
 }
 
 Button.defaultProps = {
   type: 'primary',
+  onClick: () => {},
   isBlock: true,
 }
 

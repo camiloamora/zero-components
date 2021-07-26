@@ -4,13 +4,6 @@ import Heading from '../../atoms/Heading/index'
 export default {
   title: 'Atoms/Heading',
   component: Heading,
-  decorators: [
-    (Story) => (
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <Story />
-      </div>
-    ),
-  ],
 }
 
 export const Default = () => <Heading>Heading</Heading>

@@ -6,9 +6,14 @@ import Icon from '../../atoms/Icon'
 
 import styles from './dropdown.module.css'
 
-const Dropdown = ({ id, className, options, value, onChange }) => (
-  <div id={id} className={classNames(className, styles.dropdown)}>
-    <Icon className={styles['dropdown-icon']} type="angle-down" hasBackground />
+const Dropdown = ({ id, options, value, onChange, isInline }) => (
+  <div
+    id={id}
+    className={classNames(styles.dropdown, {
+      [styles['is-inline']]: isInline,
+    })}
+  >
+    <Icon className="dropdown-icon" name="angleDown" background="highlight" />
     <select
       className={styles['dropdown-select']}
       onChange={onChange}
@@ -34,10 +39,13 @@ Dropdown.propTypes = {
   value: PropTypes.string,
   id: PropTypes.string,
   className: PropTypes.string,
+  isInline: PropTypes.bool,
 }
 
 Dropdown.defaultProps = {
   value: '',
+  isInline: false,
+  onChange: () => {},
 }
 
 export default Dropdown
