@@ -4,17 +4,16 @@ import { iconsMap, mapSize } from './helpers'
 
 import styles from './icon.module.css'
 import { options } from './constants'
-import { getClasses } from '../../helpers/styles'
+import withStyles from '../../hok/withStyles'
 
-const Icon = ({ id, className, onClick, name, size, color, background }) => {
+const Icon = ({ id, className, onClick, name, size, styles }) => {
   const icon = iconsMap[name]
   const mappedSize = mapSize(size)
-  const classes = getClasses(styles)({ color, size, background })
 
   return (
     <div
       id={id}
-      className={classes(className, 'icon', ['color', 'size', 'background'], {
+      className={styles(className, 'icon', ['color', 'size', 'background'], {
         'is-clickable': !!onClick,
       })}
       style={{ width: mappedSize, height: mappedSize }}
@@ -40,12 +39,13 @@ Icon.propTypes = {
   background: PropTypes.oneOf(options.backgrounds),
   id: PropTypes.string,
   className: PropTypes.string,
+  styles: PropTypes.func.isRequired,
 }
 
 Icon.defaultProps = {
-  size: 'md',
+  size: 'sm',
   color: 'base',
   background: 'transparent',
 }
 
-export default Icon
+export default withStyles(styles)(Icon)

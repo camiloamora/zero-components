@@ -9,5 +9,5 @@ export default {
 export const Default = () => <Icon name="arrowRight" />
 export const Clickable = () => <Icon name="plusCircle" />
 export const Backgrounds = () => (
-  <Icon name="arrowRight" background="base" color="highlight" />
+  <Icon key="0" name="arrowRight" background="inverted" />
 )
