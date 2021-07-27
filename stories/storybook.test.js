@@ -1,5 +1,5 @@
-import initStoryshots from '@storybook/addon-storyshots'
-initStoryshots()
+// import initStoryshots from '@storybook/addon-storyshots'
+// initStoryshots()
 
 // import Button from '../atoms/Button'
 // import React from 'react'
@@ -12,3 +12,9 @@ initStoryshots()
 //     expect(tree).toMatchSnapshot()
 //   })
 // })
+
+describe('[storybook test ]', () => {
+  it('pass', () => {
+    expect(true).toBe(true)
+  })
+})

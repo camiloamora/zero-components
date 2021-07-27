@@ -3,12 +3,17 @@ import classNames from 'classnames'
 export const getDynamicClasses = (stylesModule, props, arg) => {
   return arg.reduce((pre, cur) => {
     const prop = props[cur]
-    return { ...pre, [stylesModule[`${cur}-${prop}`]]: prop }
+    const className = [stylesModule[`${cur}-${prop}`]]
+    if (className && prop) {
+      return { ...pre, [stylesModule[`${cur}-${prop}`]]: prop }
+    }
+
+    return pre
   }, {})
 }
 
 export const getModuleClasses = (stylesModule, arg) => {
-  return stylesModule[arg] || arg
+  return (stylesModule && stylesModule[arg]) || arg
 }
 
 export const getObjectClasses = (stylesModule, arg) => {
