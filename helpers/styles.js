@@ -17,8 +17,9 @@ export const getModuleClasses = (stylesModule, arg) => {
 }
 
 export const getObjectClasses = (stylesModule, arg) => {
-  return Object.keys(arg).reduce((pre, cur) => {
-    return { ...pre, [stylesModule[cur]]: arg[cur] }
+  return Object.keys(arg).reduce((classes, classKey) => {
+    const className = stylesModule[classKey]
+    return className ? { ...classes, [className]: arg[classKey] } : classes
   }, {})
 }
 

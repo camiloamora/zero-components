@@ -14,7 +14,6 @@
     ]
   },
   "scripts": {
-    "test": "jest",
     "storybook": "start-storybook -p 6006 -s ./assets",
     "build-storybook": "build-storybook -s ./assets",
     "build-tokens": "node ./scripts/build-tokens",
@@ -22,7 +21,9 @@
     "prepare": "husky install",
     "semantic-release": "semantic-release",
     "chromatic": "npx chromatic --project-token=358998807752",
-    "create-component": "node ./scripts/create-component"
+    "create-component": "node ./scripts/create-component",
+    "test:watch": "yarn test --watch",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
